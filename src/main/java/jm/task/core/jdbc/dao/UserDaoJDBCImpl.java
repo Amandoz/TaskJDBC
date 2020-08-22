@@ -20,7 +20,7 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
                 "  `id` BIGINT NOT NULL AUTO_INCREMENT,\n" +
                 "  `name` VARCHAR(45) NOT NULL,\n" +
                 "  `last_name` VARCHAR(45) NOT NULL,\n" +
-                "  `age` SMALLINT NULL,\n" +
+                "  `age` SMALLINT NOT NULL,\n" +
                 "  PRIMARY KEY (`id`))";
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.executeUpdate();
