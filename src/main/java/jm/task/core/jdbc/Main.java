@@ -7,7 +7,7 @@ import jm.task.core.jdbc.util.Util;
 public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
-        UserDaoJDBCImpl user = new UserDaoJDBCImpl();
+        UserServiceImpl user = new UserServiceImpl();
         user.createUsersTable();
         user.saveUser("Misha", "Terentev", (byte) 22);
         user.saveUser("Ivan", "Ivanov", (byte) 31);
